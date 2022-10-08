@@ -16,7 +16,6 @@ Document
 ==========================================================================
 */
 
-
 *{
     font-family: 'Inter', sans-serif;
 }
@@ -71,6 +70,7 @@ Main
 
 .container_hero{
     display: flex;
+    margin-bottom: 4em;
 }
 
 .hero_content{
@@ -104,27 +104,31 @@ Main
     font-weight: bold;
     color: var(--color-black);
     text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 5em;  
-    border-image: linear-gradient(to right, #FF3998 0%, #FF8139 100%) 1; 
-    padding: 0.75em 2em;
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 23px, transparent 23px) 0% 0%/25px 25px no-repeat,
+        radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 23px, transparent 23px) 100% 0%/25px 25px no-repeat,
+        radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 23px, transparent 23px) 0% 100%/25px 25px no-repeat,
+        radial-gradient(circle at 0 0, #ffffff 0, #ffffff 23px, transparent 23px) 100% 100%/25px 25px no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 50px) no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 50px) calc(100% - 4px) no-repeat,
+        linear-gradient(90deg, #ff3998 0%, #FF8139 100%);
+    border-radius: 25px;
+    padding: 1em 2.5em;
+    box-sizing: border-box;
 
 }
 
 .hero_img{
-    position: absolute;
-    width: 328px;
-    height: 519px;
-    right: 325px;
-    top: 308px; 
+    width: 40%; 
     margin-left: 1em;
+    background: rgb(255,57,152);
     background: radial-gradient(circle, rgba(255,57,152,1) 12%, rgba(255,255,255,1) 63%);
     padding: 0 4em;
 }
 
 .container_upsell{
     display: flex;
-    margin-top: 7em;
+    height: 365px;
+    margin-top: 8em;
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 2em;
@@ -142,10 +146,12 @@ Main
         hsl(132deg 67% 69%) 95%,
         hsl(151deg 100% 61%) 100%
     );
+    border-radius: 10px;
 }
 
 .upsell_content{
     margin-left: 4em;
+    padding-bottom: 3.5em;
 }
 
 .upsell_title{
@@ -157,6 +163,11 @@ Main
 .upsell_text{
     font-size: 20px;
     margin: 0.5em 0 1.5em 0;
+}
+
+.upsell_graphic{
+    padding-bottom: 5em;
+    padding-right: 5em;
 }
 
 .container_press{
@@ -200,6 +211,11 @@ Main
 .showcase_img{
     width: 280px;
     height: 282px /* 195.19px; 174px*/
+     
+}
+
+.showcase_card.contain{
+    object-fit: cover;
 }
 
 .showcase_card_group1{
@@ -331,7 +347,6 @@ Main
 
 .container_release2{
     display: flex;
-    background-color: lightblue;
     border-radius: 1em;
     align-items: center;
     justify-content: space-around;
@@ -339,7 +354,6 @@ Main
     padding: 3em 4em 3em 2em;
     background: rgb(57,255,160);
     background: linear-gradient(234deg, rgba(57,255,160,0.3029586834733894) 15%, rgba(255,129,57,0.43461134453781514) 98%);
-
 }
 
 .release2_text{
@@ -374,6 +388,7 @@ Main
 .release_card{
     background-color: #000000;
 }
+
 
 .container_info{
     display: flex;
@@ -410,7 +425,8 @@ Main
     display: flex;
     margin: 1em 0;
     padding: 2em 2em;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px  solid #eeeeee;
+    border-bottom: 1px  solid #eeeeee;
     align-items: center;
 }
 
