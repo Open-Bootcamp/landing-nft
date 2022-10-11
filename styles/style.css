@@ -197,20 +197,20 @@ Main
     align-items: center;
     gap: 1.47rem;
     padding: 1rem 0;
-    overflow-x: hidden;
 }
 
 .showcase_card{
     border-radius: .75rem;
     color: #000;
-    transition: 0.2s;
-    margin: 0 0.3rem 0 0;
+    margin: 0 0 0 0;
     background-color: var(--color-lightgrey);
+    width: 288px;
+    display: inline-block;
 }
 
 .showcase_img{
-    width: 280px;
-    height: 282px /* 195.19px; 174px*/
+    width: 288px;
+    height: 282px;
      
 }
 
@@ -218,10 +218,15 @@ Main
     object-fit: cover;
 }
 
+.showcase_card_group{
+    display: flex;
+    justify-content: space-between;
+}
+
 .showcase_card_group1{
     display: inline-block;
     position: relative;
-    margin-left: 1rem;
+    margin: 1rem;
 }
 
 .showcase_series{
@@ -237,6 +242,10 @@ Main
     margin: 0.2em 0;
 }
 
+.showcase_name.white{
+    color: #ffffff;
+}
+
 .showcase_ref{
     font-size: 18px;
     color: var(--color-drakgrey);
@@ -246,33 +255,38 @@ Main
 .showcase_card_group2{
     display: inline-block;
     position: relative;
-    margin-right: 1rem;
+    margin: 1em;
 }
 
 .showcase_bid{
     color: var(--color-drakgrey);
     text-transform: uppercase;
     font-size: 12px;
-    margin: 0.2em 0;
+    margin: 0.2em 0 0 5.5em;
+    align-self: right;
 }
 
 .showcase_icon{
+    display: inline-block;
     font-size: 20px;
-    margin: 0.2em 0;
-    position: relative;
+    margin: 0.2em;
+    position: absolute;
 }
 
 .showcase_eth{
     font-size: 18px;
     font-weight: 500;
-    margin: 0.2em 0;
-    position: relative;
+    margin: 0.2em 0 0 2em;
+}
+
+.showcase_eth.white{
+    color: #ffffff;
 }
 
 .showcase_day{
     font-size: 18px;
     color: var(--color-drakgrey);
-    margin: 0.2em 0;
+    margin: 0.2em 0 0 2em;
 }
 
 .container_release1{
