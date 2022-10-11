@@ -421,6 +421,11 @@ Main
     color: var(--color-greyregular);
 }
 
+/*
+Footer
+==========================================================================
+*/
+
 .footer_upsell{
     display: flex;
     margin: 1em 0;
@@ -452,16 +457,20 @@ Main
     width: 75%;
 }
 
-.cotainer_footer{
+.container_footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 6em;
+    margin: 6em 0;
+
+}
+
+.footer_contact{
+    width: 40%;
 }
 
 .footer_contact_text{
     font-size: 20px;
     color: var(--color-greyregular);
-    width: 30%;
 }
 
 .redes{
@@ -470,13 +479,30 @@ Main
 
 .footer_about{
     width: 60%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
 }
 
-.footer_about li {
-    list-style: none; 
-    display: inline  
+.elemento_footer{
+    display: block;
+    margin: 0 5em 0 0;
 }
 
+
+ul.lista_footer{
+    list-style: none;
+    margin: 2px 0;
+    padding: 0 0 0 0.3em;
+    color: var(--color-greyregular);
+    font-size: 18px;
+}
+
+.titulo_footer{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 .footer_developed{
     display: flex;
@@ -484,4 +510,5 @@ Main
     font-size: 20px;
     color: #999999;
     margin-bottom: 10px;
+    margin-right: 2em;
 }
