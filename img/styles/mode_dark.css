@@ -127,7 +127,7 @@ body.darkmode{
 
 /*Mobile*/
 
-@media only screen and (max-width: 500px){
+@media (max-width: 500px){
     .darkmode .icon-menu{
         width: 2.em;
         padding: 1em;
