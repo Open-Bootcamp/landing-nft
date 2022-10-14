@@ -99,8 +99,7 @@ Header
 .mobile-menu ul{
     border: solid 2px var(--color-pink);
     border-radius: 8px;
-    background:  linear-gradient(80deg, #f75aa6 2%, white 70%);
-    list-style: none;
+    background:  linear-gradient(80deg, #f75aa6 2%, white 60%);
 }
 .mobile-menu ul li{
     font-size: 18px;
