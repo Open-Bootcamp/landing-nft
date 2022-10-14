@@ -10,12 +10,18 @@
   <!-- CSS -->
   <!-- <link rel="stylesheet" href="styles/reset.css"> -->
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/mode_dark.css">
 </head>
 <body>
     <header>
+        <div>
+            <button id="btn_dark">Mode Dark</button>
+        </div>
         <div class="container_header">
 			<div class="header_logo">
-                <a href="#"><img class="header_logo-img" src="img/logo.png" alt=""></a>
+                <a href="#"><img class="header_logo-img" src="img/logo.png" alt="Logo"></a>
+                <a class="logo_dark" href="#"><img class="header_logo-img" src="../landing-nft/img/logoDark.png" alt="Logo"></a>
             </div>
             
             <nav class="header_menu">
@@ -27,9 +33,9 @@
 
                 <div class="mobile-menu inactive">
                     <ul>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Launch</a></li>
+                        <li><a href="#" class="font_blanco">Features</a></li>
+                        <li><a href="#" class="font_blanco">About</a></li>
+                        <li><a href="#" class="font_blanco">Launch</a></li>
                         <li><a href="#" id="signup">Sign Up</a></li>
                     </ul>
                 </div>
@@ -49,14 +55,14 @@
                 
                     <img src="img/nft1.png" alt="hero">
                 
-                </div>
+            </div>
         </section>
         <section class="upsell">
             <div class="container_upsell">
                 <div class="upsell_content">
                     <img src="img/upsell_icon.png" alt="" class="upsell_icon">
-                    <h2 class="upsell_title">Free NFT for early birds</h2>
-                    <p class="upsell_text">Sign up today and you’ll get a free NFT when we launch.</p>
+                    <h2 class="upsell_title font_blanco">Free NFT for early birds</h2>
+                    <p class="upsell_text font_blanco">Sign up today and you’ll get a free NFT when we launch.</p>
                 </div>
                 <div class="upsell_graphic">
                     <img src="img/graphic.png" alt="" class="upsell_graphic-all">
@@ -75,7 +81,7 @@
                 <li><img src="img/press1.png" alt=""></li>
                 <li><img src="img/press2.png" alt=""></li>
                 <li><img src="img/press3.png" alt=""></li>
-                <li><img src="img/press4.png" alt=""></li>
+                <li><img src="img/press4.png" alt="" class="invisible"></li>
                 <li><img src="img/press5.png" alt=""></li>
             </div>
         </section>
@@ -91,7 +97,7 @@
                         <div class="showcase_card_group">
                             <div class="showcase_card_group1">
                                 <p class="showcase_series">Gloop Series</p>
-                                <p class="showcase_name">Purple Man</p>
+                                <p class="showcase_name font_blanco">Purple Man</p>
                                 <p class="showcase_ref">#12983</p>
                             </div>
                             <div class="showcase_card_group2">
@@ -150,7 +156,14 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
+                <ul class="puntos">
+                    <li class="punto activo">.</li>
+                    <li class="punto activo">.</li>
+                    <li class="punto activo">.</li>
+                    <li class="punto activo">.</li>
+                </ul>
             </div>
         </section>
         <section class="release">

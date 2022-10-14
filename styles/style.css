@@ -37,6 +37,26 @@ Header
 ==========================================================================
 */
 
+#btn_dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    top: 0;
+    margin-left: 0;
+    margin-bottom: 2em;
+    padding: 0.8em;
+    border-radius: 12px;
+    color: var(--color-orange);
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 23px, transparent 23px) 0% 0%/25px 25px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 23px, transparent 23px) 100% 0%/25px 25px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 23px, transparent 23px) 0% 100%/25px 25px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 23px, transparent 23px) 100% 100%/25px 25px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 50px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 50px) calc(100% - 4px) no-repeat,
+    linear-gradient(90deg, #ff3998 0%, #FF8139 100%);;
+}
+
 .container_header{
     display: flex;
     justify-content: space-between;
@@ -67,21 +87,24 @@ Header
     color: var(--color-pink);
 }
 .mobile-menu{
-    position: absolute;
-    left: 65%;
-    top: 70px;
-    padding: 24px;
+    position: fixed;
+    z-index: 998;
+    top: 4%;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
     
 }
 .mobile-menu ul{
     border: solid 2px var(--color-pink);
-    border-radius: 10px;
-    background:  linear-gradient(80deg, #ff3998 0%, white 80%);
+    border-radius: 8px;
+    background:  linear-gradient(80deg, #f75aa6 2%, white 60%);
 }
 .mobile-menu ul li{
     font-size: 18px;
     font-weight: bold;    
-    padding: 0.90em;
+    padding: 0.80em;
     
 }
 .mobile-menu ul li a{
@@ -154,7 +177,7 @@ Main
     width: 25%; 
     margin-left: 1em;
     background: rgb(255,57,152);
-    background: radial-gradient(circle, rgba(255,57,152,1) 12%, rgba(255,255,255,1) 63%);
+    background: radial-gradient(circle, rgba(255,57,152,1) 26%, rgba(255,255,255,1) 55%);
     padding: 0 4em;
 }
 
@@ -320,6 +343,12 @@ Main
     font-size: 18px;
     color: var(--color-drakgrey);
     margin: 0.2em 0 0 2em;
+}
+
+.puntos{
+    list-style: none;
+    color: var(--color-black);
+    background: radial-gradient(circle, rgba(248, 82, 162, 0.877) 18%, rgba(255,255,255,1) 75%);
 }
 
 .container_release1{
@@ -494,14 +523,15 @@ Footer
 }
 
 .footer_upsell_graphic{
-    background: rgb(255,57,152);
-    background: radial-gradient(circle, rgba(255,57,152,1) 12%, rgba(255,255,255,1) 63%);
+          
     padding: 0 4em;
 }
 
 .footer_img{
     padding: 0 3em;
     width: 75%;
+    background: rgb(255,57,152);
+    background: radial-gradient(circle, rgba(255,57,152,1) 26%, rgba(255,255,255,1) 55%);
 }
 
 .container_footer{
@@ -559,3 +589,9 @@ ul.lista_footer{
     margin-bottom: 10px;
     margin-right: 2em;
 }
+
+
+
+
+
+
